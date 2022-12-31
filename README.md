@@ -11,6 +11,9 @@
 
 `Netflix speedtest library - github.com/ddo/go-fast`
 
+## Note:
+It seems that most libraries for Netflix(https://fast.com) provides only API for getting download speed. So I found this lib `https://github.com/calin014/speedfast` and took code for getting upload speed from there.
+
 ## Usage API
 ```go
 package main
