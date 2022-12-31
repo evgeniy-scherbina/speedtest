@@ -4,7 +4,7 @@ import (
 	"github.com/ddo/go-fast"
 )
 
-type netflix struct {}
+type netflix struct{}
 
 func newNetflix() *netflix {
 	return &netflix{}
@@ -24,8 +24,8 @@ func (n *netflix) GetResult() (*Result, error) {
 	}
 
 	var (
-		kbpsChan = make(chan float64)
-		totalKbps float64
+		kbpsChan             = make(chan float64)
+		totalKbps            float64
 		numberOfMeasurements int
 	)
 	go func() {
@@ -43,8 +43,13 @@ func (n *netflix) GetResult() (*Result, error) {
 	avgKbps := totalKbps / float64(numberOfMeasurements)
 	avgMbps := avgKbps / 1000
 
+	uploadSpeed, err := measureUploadWithFast()
+	if err != nil {
+		return nil, err
+	}
+
 	return &Result{
 		DLSpeed: avgMbps,
-		ULSpeed: 0,
+		ULSpeed: uploadSpeed,
 	}, nil
 }

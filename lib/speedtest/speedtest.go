@@ -10,8 +10,8 @@ const (
 )
 
 type Result struct {
-	DLSpeed  float64
-	ULSpeed  float64
+	DLSpeed float64
+	ULSpeed float64
 }
 
 func GetResult(provider Provider) (*Result, error) {

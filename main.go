@@ -5,7 +5,6 @@ import (
 	"log"
 
 	"github.com/evgeniy-scherbina/sandbox/speedtest/lib/speedtest"
-
 )
 
 func main() {
@@ -18,7 +17,7 @@ func main() {
 		fmt.Printf("result: %v\n", result)
 	}
 
-	if true {
+	if false {
 		result, err := speedtest.GetResult(speedtest.NetflixProvider)
 		if err != nil {
 			log.Fatal(err)
@@ -26,4 +25,5 @@ func main() {
 
 		fmt.Printf("result: %v\n", result)
 	}
+
 }

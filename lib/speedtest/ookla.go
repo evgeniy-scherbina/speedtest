@@ -5,7 +5,7 @@ import (
 	"github.com/showwin/speedtest-go/speedtest"
 )
 
-type ookla struct {}
+type ookla struct{}
 
 func newOokla() *ookla {
 	return &ookla{}

@@ -4,9 +4,11 @@ go 1.18
 
 require (
 	github.com/ddo/go-fast v0.0.0-20190807090025-2ab4a3dd618c
+	github.com/gesquive/fast-cli v0.2.10
 	github.com/pkg/errors v0.9.1
 	github.com/showwin/speedtest-go v1.3.1
 	github.com/stretchr/testify v1.4.0
+	golang.org/x/sync v0.0.0-20210220032951-036812b2e83c
 )
 
 require (
@@ -15,9 +17,13 @@ require (
 	github.com/ddo/go-spin v0.0.0-20160718105357-ab0a40e623c0 // indirect
 	github.com/ddo/pick-json v0.0.0-20170207095303-c8760e09e0fe // indirect
 	github.com/ddo/rq v0.0.0-20190828174524-b3daa55fcaba // indirect
+	github.com/fatih/color v1.9.0 // indirect
+	github.com/gesquive/cli v0.2.1 // indirect
+	github.com/mattn/go-colorable v0.1.4 // indirect
+	github.com/mattn/go-isatty v0.0.11 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	golang.org/x/net v0.4.0 // indirect
-	golang.org/x/sync v0.0.0-20210220032951-036812b2e83c // indirect
+	golang.org/x/sys v0.3.0 // indirect
 	gopkg.in/ddo/go-dlog.v1 v1.0.2 // indirect
 	gopkg.in/ddo/go-dlog.v2 v2.1.0 // indirect
 	gopkg.in/ddo/pick.v1 v1.2.2 // indirect
